@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="item_blank">8dp</dimen>
+    <dimen name="image_banner">300dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+</resources>

@@ -1,4 +1,4 @@
-package com.mrtcnkryln.kotlin_mvvm.ui.view
+package com.mrtcnkryln.kotlin_mvvm.ui.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
