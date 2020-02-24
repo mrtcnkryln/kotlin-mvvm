@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/screen_padding"
+    android:gravity="center"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@mipmap/accept"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"/>
+    <TextView
+        android:id="@+id/hotelFacility"
+        android:layout_marginStart="@dimen/item_blank"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/description_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

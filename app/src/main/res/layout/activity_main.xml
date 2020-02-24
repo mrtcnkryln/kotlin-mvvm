@@ -1,10 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_padding"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorGray"
     tools:context=".ui.view.activity.HotelActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <technolifestyle.com.imageslider.FlipperLayout
+                android:id="@+id/bannerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_banner"/>
+            <TextView
+                android:id="@+id/hotelName"
+                android:layout_marginTop="@dimen/item_blank"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/title_size"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:numStars="5"
+                android:stepSize="1.0"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:isIndicator="true"
+                android:layout_marginTop="@dimen/item_blank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginTop="@dimen/item_blank"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/pin"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"/>
+                <TextView
+                    android:id="@+id/hotelLocation"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginStart="@dimen/item_blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hotelDescription"
+                android:layout_marginTop="@dimen/item_blank"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/description_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:id="@+id/hotelFacilites"
+                android:layout_marginTop="@dimen/item_blank"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/findAvailableFlights"
+                android:layout_marginTop="@dimen/item_blank"
+                android:text="@string/find_available_flights"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/btn_selector"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

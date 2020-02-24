@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import com.mrtcnkryln.kotlin_mvvm.di.ApiComponent
 import com.mrtcnkryln.kotlin_mvvm.di.DaggerApiComponent
 import com.mrtcnkryln.kotlin_mvvm.di.NetworkModule
+import com.mrtcnkryln.kotlin_mvvm.ui.viewmodel.FlightsViewModel
 import com.mrtcnkryln.kotlin_mvvm.ui.viewmodel.HotelViewModel
 
 abstract class BaseViewModel : ViewModel () {
@@ -22,8 +23,12 @@ abstract class BaseViewModel : ViewModel () {
     private fun inject() {
         when (this) {
             is HotelViewModel -> {
-                injector.inject(this)
+                injector.injectHotelViewModel(this)
             }
+            is FlightsViewModel -> {
+                injector.injectFlightsViewModel(this)
+            }
+
 
 
         }

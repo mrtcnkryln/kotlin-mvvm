@@ -1,5 +1,6 @@
 package com.mrtcnkryln.kotlin_mvvm.di
 
+import com.mrtcnkryln.kotlin_mvvm.ui.viewmodel.FlightsViewModel
 import com.mrtcnkryln.kotlin_mvvm.ui.viewmodel.HotelViewModel
 import dagger.Component
 import javax.inject.Singleton
@@ -13,6 +14,7 @@ interface ApiComponent {
         fun networkModule(networkModule: NetworkModule): Builder
     }
 
-    fun inject(hotelViewModel: HotelViewModel)
+    fun injectHotelViewModel(hotelViewModel: HotelViewModel)
+    fun injectFlightsViewModel(flightsViewModel: FlightsViewModel)
 
 }

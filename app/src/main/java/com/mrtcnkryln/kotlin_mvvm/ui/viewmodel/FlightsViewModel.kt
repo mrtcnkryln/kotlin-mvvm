@@ -1,6 +1,8 @@
 package com.mrtcnkryln.kotlin_mvvm.ui.viewmodel
 
 import androidx.lifecycle.MutableLiveData
+import com.mrtcnkryln.kotlin_mvvm.model.AllFlightsModel
+import com.mrtcnkryln.kotlin_mvvm.model.FlightModel
 import com.mrtcnkryln.kotlin_mvvm.model.HotelModel
 import com.mrtcnkryln.kotlin_mvvm.network.ApiInterface
 import com.mrtcnkryln.kotlin_mvvm.ui.viewmodel.base.BaseViewModel
@@ -9,14 +11,14 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
-class HotelViewModel : BaseViewModel() {
+class FlightsViewModel : BaseViewModel() {
     var apiInterface : ApiInterface? = null
     @Inject set
     private  val compositeDisposable = CompositeDisposable()
-    var resultLiveData : MutableLiveData<HotelModel> = MutableLiveData()
+    var resultLiveData : MutableLiveData<AllFlightsModel> = MutableLiveData()
 
-    fun getHotel() {
-        apiInterface?.hotel()
+    fun getFlights() {
+        apiInterface?.flights()
             ?.subscribeOn(Schedulers.io())
             ?.observeOn(AndroidSchedulers.mainThread())
             ?.doOnSubscribe {
