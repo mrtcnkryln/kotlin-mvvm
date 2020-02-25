@@ -1,9 +1,6 @@
 package com.mrtcnkryln.kotlin_mvvm
 
 import androidx.recyclerview.widget.RecyclerView
-import androidx.test.espresso.Espresso
-import androidx.test.espresso.action.ViewActions
-import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.rule.ActivityTestRule
 import androidx.test.runner.AndroidJUnit4
 import com.mrtcnkryln.kotlin_mvvm.ui.view.activity.FlightsActivity
@@ -14,7 +11,6 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
-import java.util.concurrent.locks.Condition
 
 @RunWith(AndroidJUnit4::class)
 class FlightsActivityTest {

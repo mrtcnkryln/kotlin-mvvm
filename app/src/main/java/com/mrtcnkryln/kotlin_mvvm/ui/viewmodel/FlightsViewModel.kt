@@ -2,8 +2,6 @@ package com.mrtcnkryln.kotlin_mvvm.ui.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import com.mrtcnkryln.kotlin_mvvm.model.AllFlightsModel
-import com.mrtcnkryln.kotlin_mvvm.model.FlightModel
-import com.mrtcnkryln.kotlin_mvvm.model.HotelModel
 import com.mrtcnkryln.kotlin_mvvm.network.ApiInterface
 import com.mrtcnkryln.kotlin_mvvm.ui.viewmodel.base.BaseViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
