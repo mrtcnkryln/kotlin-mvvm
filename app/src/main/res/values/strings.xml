@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Kotlin_mvvm</string>
     <string name="find_available_flights">FIND AVAILABLE FLIGHTS</string>
+    <string name="available_flights">AVAILABLE FLIGHTS</string>
 </resources>

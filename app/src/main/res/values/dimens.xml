@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="tab_bar_height">60dp</dimen>
     <dimen name="screen_padding">8dp</dimen>
     <dimen name="item_blank">8dp</dimen>
     <dimen name="image_banner">250dp</dimen>
     <dimen name="icon_size">24dp</dimen>
+    <dimen name="icon_size_big">40dp</dimen>
     <dimen name="title_size">18sp</dimen>
+    <dimen name="time_size">20sp</dimen>
     <dimen name="description_size">10sp</dimen>
 </resources>
